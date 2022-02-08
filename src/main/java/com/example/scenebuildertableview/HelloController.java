@@ -3,22 +3,16 @@ package com.example.scenebuildertableview;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.input.MouseEvent;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class HelloController implements Initializable {
-
-    @FXML
-    private Button exitBtn;
 
     @FXML
     private TableView<Student> table;
@@ -62,7 +56,7 @@ public class HelloController implements Initializable {
     }
 
     @FXML
-    void closeApp(ActionEvent event) {
+    void closeApp() {
         System.out.println ("Function");
         Platform.exit ();
 
