@@ -8,13 +8,13 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scenebuildertableview.HelloController">
    <children>
-      <TableView fx:id="table" layoutX="106.0" layoutY="40.0" prefHeight="300.0" prefWidth="400.0">
+      <TableView fx:id="table" layoutX="79.0" layoutY="40.0" prefHeight="300.0" prefWidth="455.0" styleClass="ipad-dark-grey" stylesheets="@../../../styles.css">
         <columns>
           <TableColumn fx:id="fstName" prefWidth="132.800048828125" text="First Name" />
           <TableColumn fx:id="scndName" prefWidth="142.39996337890625" text="Last Name" />
             <TableColumn fx:id="studentID" prefWidth="125.60003662109375" text="Student ID" />
         </columns>
       </TableView>
-      <Button fx:id="exitBtn" layoutX="274.0" layoutY="355.0" mnemonicParsing="false" onAction="#closeApp" text="Quit" />
+      <Button fx:id="exitBtn" layoutX="274.0" layoutY="355.0" mnemonicParsing="false" onAction="#closeApp" style="-fx-font-size: 14;" styleClass="round-red" stylesheets="@../../../styles.css" text="Quit" />
    </children>
 </AnchorPane>
